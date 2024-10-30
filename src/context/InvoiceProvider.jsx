@@ -5,7 +5,10 @@ const InvoiceContext = createContext();
 // eslint-disable-next-line react/prop-types
 const InnvoiceProvider = ({children}) => {
   
-  const [userView, setUserView] = useState({});
+  const [userView, setUserView] = useState({
+    name: 'Tus Facturas',
+    code: 3
+  });
 
   const handleClickUser = () => {
     setUserView({

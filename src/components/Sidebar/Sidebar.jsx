@@ -28,10 +28,6 @@ export const Sidebar = () => {
       <p className="font-lato my-10 text-xl text-center">HOLA: {user?.name}</p>
       <div className="mt-10 flex items-center gap-4 border w-full p-3 flex-col">
         <button onClick={handleClickViewInvoices} className="hover:bg-cyan-600 hover:text-white cursor-pointer font-bold truncate font-lato w-full" >Ver Facturas</button>
-        {/* 
-
-        TODO: REVISAR AUTENTICACIÓN
-
         {hasRole('Admin') && (
           <button
             onClick={handleClickAddInvoices}
@@ -39,8 +35,7 @@ export const Sidebar = () => {
           >
             Agregar Facturas
           </button>
-        )} */}
-        <button onClick={handleClickAddInvoices} className="hover:bg-cyan-600 hover:text-white cursor-pointer font-bold truncate font-lato w-full" >Agregar Facturas</button>
+        )}
       </div>
       <div className="my-5 px-5">
         <button 
